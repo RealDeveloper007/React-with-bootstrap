@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link  } from 'react-router-dom'
+
 import './App.css';
 
 class App extends Component {
@@ -12,7 +14,7 @@ class App extends Component {
                           <h1>A COMMUNITY FOR <span>MEDICAL</span> STUDENTS	</h1>
                           <p class="lead">Medicalschoolquizzes.com provides a platform for rapid review of key concepts for all students of he...
                           <br/>
-                          <a href="#">Join Today!</a>
+                          <Link to="/contact">Join Today!</Link>
                           </p>
                       </div>
                   </div>

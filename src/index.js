@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 
 import App from './App';
-import Users from './component/users'
+import About from './component/about'
 import Contact from './component/contact'
 import Header from './component/layout/header';
 import Footer from './component/layout/footer';
@@ -47,12 +47,13 @@ const routing = (
     
         <div class="navbar-header">
             
-            <a class="navbar-brand" href="#"><img src={logo} alt="logo"/></a> 
+            <Link to="/" class="navbar-brand"><img src={logo} alt="logo"/></Link> 
+
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><Link to="/">Home</Link></li>
-                     <li><Link to="/users">Members</Link></li> 
+                     <li><Link to="/about">About Us</Link></li> 
                     <li><Link to="/contact">Contact us</Link></li>
                 </ul>
             </div>
@@ -60,7 +61,7 @@ const routing = (
     </div>
     </header>
       <Route exact path="/" component={App} />
-      <Route path="/users" component={Users} />
+      <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
       <Footer/>
   </Router>

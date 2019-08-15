@@ -208,7 +208,10 @@ p.lead {
   background-position: 50% 0;
   background-repeat: no-repeat;
   padding: 200px 0;
+  background-image: url(../images/p25.jpg);
+  margin: -4px;
 }
+
 #main-slider .item {
   -moz-transition: opacity ease-in-out 500ms;
   -o-transition: opacity ease-in-out 500ms;

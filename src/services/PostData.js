@@ -1,25 +1,74 @@
 import axios from 'axios';
 
 export function PostData(type, details) {
- let BaseURL = 'http://localhost/codeignator_api/auth/contact';
+  
 
 
  return new Promise((resolve, reject) =>{
 
-  axios({
-    method: 'post',
-    mode: 'cors',
-    url: `${BaseURL}`,
-    headers: { 'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'},
-    data: details
-  })
-  .then((response) => response)
-  .then((res) => {
-	 resolve(res);
-	})
-	.catch((error) => {
- 		reject(error);
-	});
+  if(type==='contact') 
+  {
+      let BaseURL = 'http://localhost/codeignator_api/auth/contact';
+
+         axios({
+            method: 'post',
+            mode: 'cors',
+            url: `${BaseURL}`,
+            headers: { 'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'},
+            data: details
+        })
+        .then((response) => response)
+        .then((res) => {
+         resolve(res);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+
+  }
+
+  if(type==='register') {
+
+      let BaseURL = 'http://localhost/codeignator_api/auth/signup';
+
+       axios({
+            method: 'post',
+            mode: 'cors',
+            url: `${BaseURL}`,
+            headers: { 'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'},
+            data: details
+        })
+        .then((response) => response)
+        .then((res) => {
+         resolve(res);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+  }   
+
+
+  if(type==='login') {
+
+      let BaseURL = 'http://localhost/codeignator_api/auth/login';
+
+       axios({
+            method: 'post',
+            mode: 'cors',
+            url: `${BaseURL}`,
+            headers: { 'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'},
+            data: details
+        })
+        .then((response) => response)
+        .then((res) => {
+         resolve(res);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+  } 
+
+
 });
 
 

@@ -18,6 +18,25 @@
   font-size: large;
 }
 
+span.Toaster__manager-top-right {
+    top: 125px !important;
+}
+
+.Toaster__alert_close {
+    top: -4px !important;
+    font-size: 3rem !important;
+    opacity: 1.5 !important;
+}
+
+.Toaster__alert_text {
+    color: rgb(58, 7, 7) !important;
+    font-size : 16px !important;
+
+}
+
+.Toaster__alert {
+    background-color: #f1b13e !important;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

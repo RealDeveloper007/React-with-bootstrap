@@ -1,7 +1,6 @@
 import React from 'react'
-import axios from 'axios';
 import {PostData} from '../services/PostData';
-import {Redirect} from 'react-router-dom';
+// import {Redirect} from 'react-router-dom';
 import toaster from "toasted-notes";
 import "toasted-notes/src/styles.css"; // optional styles
 
@@ -31,7 +30,7 @@ handleFormSubmit = e => {
               duration: 2000 // This notification will not automatically close
         });
 
-        if (responseJson.status==true)
+        if (responseJson.status===true)
         {
              setTimeout(function() {
                     location.reload();

@@ -31,10 +31,6 @@ class App extends Component {
                   </div>
               </div>
                       </div>
-                  <div class="center">
-                      <a href="#register" class="btn btn-primary btn-home-slider btn-lg register_open">Register</a>
-                      <a href="#login" class="btn btn-primary btn-home-slider btn-lg login_open">Login</a>
-              </div>
                 <a class="prev" href="#main-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
                 <a class="next" href="#main-slider" data-slide="next"><i class="fa fa-angle-right"></i></a> 
         </section>

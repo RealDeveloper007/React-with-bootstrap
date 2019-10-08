@@ -6,6 +6,9 @@ import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import App from './App';
 import About from './component/about'
 import Contact from './component/contact'
+import Login from './component/login'
+import Signup from './component/signup'
+import Dashboard from './component/dashboard/dashboard'
 import Header from './component/layout/header';
 import Footer from './component/layout/footer';
 import phone from './component/layout/images/phone.png';
@@ -27,9 +30,9 @@ const routing = (
                         <img src={phone} alt="phone"/> <b>Contact:</b> 1-800-915-62701</a></li>
                         <li><a href="#"><img src={message} alt="message"/> <b>Email:</b> medicalschoolquizzes@gmail.com</a></li>
                     </ul>
-                    <ul class="nav navbar-nav"><li><a href="#">Login</a></li> 
+                    <ul class="nav navbar-nav"><li><Link to="/login">Login</Link></li> 
                     <li><a>|</a></li>
-                    <li><a href="#">Sign Up</a></li>
+                    <li><Link to="/signup">Sign Up</Link></li>
                 </ul>
                 </div>
                 </div>
@@ -63,6 +66,9 @@ const routing = (
       <Route exact path="/" component={App} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
+      <Route path="/login" component={Login} />
+      <Route path="/signup" component={Signup} />
+      <Route path="/dashboard" component={Dashboard} />
       <Footer/>
   </Router>
 )
